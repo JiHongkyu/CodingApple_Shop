@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import data from './component/data.js';
 import Detail from './routes/Detail.js';
 import Cart from './routes/Cart.js';
+import Carousel from './component/Carousel.js';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar, Container, Nav} from 'react-bootstrap';
@@ -35,7 +36,7 @@ function App() {
       <Routes>
         <Route path='/' element={
           <>
-            <div className='main-bg'></div>
+            <Carousel />
             <div className="container">
               <div className="row">
                 {
